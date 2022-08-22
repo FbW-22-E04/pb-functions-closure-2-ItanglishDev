@@ -60,3 +60,7 @@ const test2 = obj.prop.getFullname;
 
 console.log(test2());//here it calls a function that is not being used
 
+// EX 4
+
+
+/**It's calling b as a function and it modifies 'a', so 'a' is =  10*/
