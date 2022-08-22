@@ -17,3 +17,25 @@ test();
  * 
  * 2 is what the function is asking to return
  */
+
+
+// EX 2
+
+let a = 1;
+
+function someFunction(number) {
+  function otherFunction(input) {
+    return a;
+  }
+
+  a = 5;
+
+  return otherFunction;
+}
+
+const firstResult = someFunction(9);
+const result = firstResult(2);
+
+/**
+ * result is a variable that calls a function, apparently it 5
+ */
