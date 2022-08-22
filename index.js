@@ -39,3 +39,24 @@ const result = firstResult(2);
 /**
  * result is a variable that calls a function, apparently it 5
  */
+
+
+// EX 3
+
+let fullname = 'John Doe';
+const obj = {
+  fullname: 'Colin Ihrig',
+  prop: {
+    fullname: 'Aurelio De Rosa',
+    getFullname: function () {
+      return this.fullname;
+    }
+  }
+};
+
+console.log(obj.prop.getFullname());// here it calls a function inside the object
+
+const test2 = obj.prop.getFullname;
+
+console.log(test2());//here it calls a function that is not being used
+
